@@ -13,7 +13,8 @@ def driver():
   #Формируем путь до папки с драйверами на основе имени диска usb и модели ноутбука
   path_drivers = rf'{path_flash[0]}\Soft\Drivers\{laptop_model}'
 
-  '''{path_flash[0]} - диск на котором запущена программа, \Soft\Drivers\ - путь до модели, {laptop_model} - модель ноутбука
+  '''
+  {path_flash[0]} - диск на котором запущена программа, \Soft\Drivers\ - путь до модели, {laptop_model} - модель ноутбука
   Полный путь получается: D:\Soft\Drivers\5430
   Для извлечения драйверов запускаем powershell от админа и выполняем команду export-windowsdriver -online -destination c:\drivers
   Драйвера сохранятся c:\drivers
